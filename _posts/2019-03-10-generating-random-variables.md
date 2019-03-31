@@ -7,8 +7,11 @@ categories: Statistics
 일반적으로 우리가 '랜덤'을 뜻할때, 실제로는 pseudo-random에 가깝다. 즉 완전 무작위적이지 않고 해당 수열에는 일정한 규칙이 존재한다. 예를 들어 java의 java.util.Random은
 ```java
 public int nextInt() {
+
   int result = (int)(seed >> (48 - bits))
+
   seed = (seed * 0x5DEECE66DL + 0xBL) & ((1L << 48) - 1)
+
 }
 ```
 에 의해 생성된다. 실제로 보면 굉장히 무작위적으로 보이지만, 이 랜덤에서 생성된 값들이 충분히 있을때 다음 값을 예측하는 것이 가능하다.
@@ -107,4 +110,4 @@ R^2 = -2 log(U[1])
 
 X = √(-2 log(U[1])) cos(2πU[2]), Y = √(-2 log(U[1])) sin(2πU[2])
 
-모두 표준 정규 분포를 따른다. 
+모두 표준 정규 분포를 따른다.
