@@ -2,6 +2,7 @@
 title: "Construction of Random Variables"
 date: 2019-03-10 01:48 -0400
 categories: Statistics
+use_math: true
 ---
 
 일반적으로 우리가 '랜덤'을 뜻할때, 실제로는 pseudo-random에 가깝다. 즉 완전 무작위적이지 않고 해당 수열에는 일정한 규칙이 존재한다. 예를 들어 java의 java.util.Random은
