@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+  
   {%- include head.html -%}
-
+  
+  <head>
+    {% if page.use_math %}
+    {% include mathjax_support.html %}
+    {% endif %}
+  </head>
   <body>
 
     {%- include header.html -%}
