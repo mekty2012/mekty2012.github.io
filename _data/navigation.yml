@@ -8,9 +8,6 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Blog Posts"
-    url: /year-archive/
-
   # Put your CV at files/cv.pdf, then uncomment:
   # - title: "CV"
   #   url: /files/cv.pdf

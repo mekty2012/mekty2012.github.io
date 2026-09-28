@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Tae Young Kim"
+title                    : "TaeYoung Kim"
 title_separator          : "-"
 name                     : &name "Tae Young Kim"
 description              : &description "Tae Young Kim's academic homepage"
@@ -24,17 +24,17 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Tae Young Kim"
-  pronouns         : # example: "she/her"  
-  bio              : # e.g. "Ph.D. student in Computer Science"
-  location         : # e.g. "Daejeon, Korea"
-  employer         : # e.g. "KAIST"
-  uri              : # URL
-  email            : # e.g. "you@example.com"
+  pronouns         : He/His # example: "she/her"  
+  bio              : Ph.D. Candidate in School of Computing # e.g. "Ph.D. student in Computer Science"
+  location         : Daejeon, Korea # e.g. "Daejeon, Korea"
+  employer         : KAIST # e.g. "KAIST"
+  uri              : https://github.com/mekty2012 # URL
+  email            : taeyoungkim21@kaist.ac.kr # e.g. "you@example.com"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # URL
+  googlescholar    : "https://scholar.google.com/citations?user=p3B7VW4AAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : # URL
@@ -115,7 +115,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true      # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
