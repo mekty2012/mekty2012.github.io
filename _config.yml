@@ -22,13 +22,13 @@ repository               : "mekty2012/mekty2012.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : # e.g. "profile.png" in images/; leave empty for no photo
   name             : "Tae Young Kim"
   pronouns         : He/His # example: "she/her"  
   bio              : Ph.D. Candidate in School of Computing # e.g. "Ph.D. student in Computer Science"
   location         : Daejeon, Korea # e.g. "Daejeon, Korea"
   employer         : KAIST # e.g. "KAIST"
-  uri              : https://github.com/mekty2012 # URL
+  uri              : # URL
   email            : taeyoungkim21@kaist.ac.kr # e.g. "you@example.com"
 
   # Academic websites
@@ -51,7 +51,9 @@ author:
   codepen          : # Username
   dribbble         : # Username
   github           : "mekty2012"
-  kaggle           : # Username  
+  chesscom         : "taeyoung-kim"
+  chesscom_label   : "Chess.com (puzzle peak 2086)"
+  kaggle           : # Username
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
