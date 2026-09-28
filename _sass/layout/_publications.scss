@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Compact publication list (_includes/publication-list.html)
+   ========================================================================== */
+
+.pub-list {
+  ul {
+    margin: 0 0 1em;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .pub-list__year {
+    margin: 1.5em 0 0.5em;
+    padding-bottom: 0.25em;
+    color: var(--global-text-color-light);
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  .pub {
+    margin-bottom: 1em;
+    line-height: 1.5;
+  }
+
+  .pub__title {
+    font-weight: bold;
+  }
+
+  .pub__authors,
+  .pub__venue {
+    font-size: 0.9em;
+  }
+
+  .pub__note {
+    color: var(--global-link-color);
+  }
+
+  .pub__links {
+    font-size: 0.85em;
+    white-space: nowrap;
+  }
+}
