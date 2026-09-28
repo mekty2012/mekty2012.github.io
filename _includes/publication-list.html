@@ -1,34 +1,31 @@
 {% comment %}
-  Compact list of everything in _publications/, newest first, grouped by year.
+  Compact list of everything in _publications/: papers marked `wip: true` first under
+  "In preparation", then the rest newest first, grouped by year.
   Used on the front page (_pages/about.md) and on /publications/.
   The output is wrapped in one unindented <div> so it is safe to include from Markdown.
 {% endcomment %}
 {%- include base_path -%}
-{%- assign pubs_by_year = site.publications | group_by_exp: "pub", "pub.date | date: '%Y'" | sort: "name" | reverse -%}
+{%- assign wip_pubs = site.publications | where_exp: "pub", "pub.wip == true" | sort: "date" | reverse -%}
+{%- assign done_pubs = site.publications | where_exp: "pub", "pub.wip != true" -%}
+{%- assign pubs_by_year = done_pubs | group_by_exp: "pub", "pub.date | date: '%Y'" | sort: "name" | reverse -%}
 <div class="pub-list">
 {%- if site.publications.size == 0 %}
 <p>Coming soon.</p>
+{%- endif %}
+{%- if wip_pubs.size > 0 %}
+<h3 class="pub-list__year">In preparation</h3>
+<ul>
+{%- for pub in wip_pubs %}
+{% include publication-item.html %}
+{%- endfor %}
+</ul>
 {%- endif %}
 {%- for year in pubs_by_year %}
 <h3 class="pub-list__year">{{ year.name }}</h3>
 <ul>
 {%- assign year_pubs = year.items | sort: "date" | reverse -%}
 {%- for pub in year_pubs %}
-<li class="pub">
-<span class="pub__title">{{ pub.title | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>
-{%- if pub.authors %}<br><span class="pub__authors">{{ pub.authors | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>{% endif %}
-<br><span class="pub__venue"><em>{{ pub.venue }}</em>{% if pub.note %} &middot; <strong class="pub__note">{{ pub.note }}</strong>{% endif %}</span>
-<span class="pub__links">
-{%- if pub.paperurl %} <a href="{% unless pub.paperurl contains '://' %}{{ base_path }}{% endunless %}{{ pub.paperurl }}">[paper]</a>{% endif %}
-{%- if pub.arxivurl %} <a href="{{ pub.arxivurl }}">[arXiv]</a>{% endif %}
-{%- if pub.doiurl %} <a href="{{ pub.doiurl }}">[DOI]</a>{% endif %}
-{%- if pub.codeurl %} <a href="{{ pub.codeurl }}">[code]</a>{% endif %}
-{%- if pub.slidesurl %} <a href="{% unless pub.slidesurl contains '://' %}{{ base_path }}{% endunless %}{{ pub.slidesurl }}">[slides]</a>{% endif %}
-{%- if pub.bibtexurl %} <a href="{% unless pub.bibtexurl contains '://' %}{{ base_path }}{% endunless %}{{ pub.bibtexurl }}">[bibtex]</a>{% endif %}
-{%- assign pub_body = pub.content | strip_html | strip -%}
-{%- if pub_body != "" %} <a href="{{ base_path }}{{ pub.url }}">[details]</a>{% endif -%}
-</span>
-</li>
+{% include publication-item.html %}
 {%- endfor %}
 </ul>
 {%- endfor %}

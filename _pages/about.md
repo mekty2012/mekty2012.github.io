@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About me"
+title: "About Taeyoung Kim"
 author_profile: true
 redirect_from:
   - /about/
@@ -10,14 +10,14 @@ redirect_from:
 <!-- Write your introduction here (Markdown). -->
 I am a Ph.D. candidate in the School of Computing at KAIST, advised by Prof. Hongseok Yang. 
 My research interests are using ML/DL for the mathematics, especially in the areas of combinaotrics.
-Recently, I am working on developing on DL frameworks for solving functional optimisation problems, which arises in extremal graph theory and large deviation analysis of random graphs.
+Recently, I am working on developing on DL frameworks for solving variational optimisation problems, which arises in extremal graph theory and large deviation analysis of random graphs.
 I'm also interested in the application of ML/DL in other areas of mathematics, harmonic analysis and PDEs, characterising the extrema of certain functional inequalities. 
 
 Education
 ======
-- **Ph.D.**, School of Computing, KAIST --- Aug 2023 -- Feb 2027 (expected)
+- **Ph.D.**, School of Computing, KAIST --- Aug 2023 -- Feb 2027 (expected, Advisor: Hongseok Yang)
 - **M.S.**, School of Computing, KAIST --- Sep 2021 -- Aug 2023 (Advisor: Hongseok Yang)
-- **B.S.**, Computer Science and Mathematics (double major), KAIST
+- **B.S.**, School of Computing and Department of Mathematical Sciences (double major), KAIST
 
 Publications
 ======

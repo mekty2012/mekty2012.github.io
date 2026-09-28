@@ -1,0 +1,21 @@
+{%- comment -%} One entry of publication-list.html; expects `pub` and `base_path` to be set. {%- endcomment -%}
+<li class="pub">
+<span class="pub__title">{{ pub.title | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>
+{%- if pub.authors %}<br><span class="pub__authors">{{ pub.authors | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>{% endif %}
+{%- if pub.venue or pub.note %}
+<br><span class="pub__venue">{% if pub.venue %}<em>{{ pub.venue }}</em>{% endif %}{% if pub.venue and pub.note %} &middot; {% endif %}{% if pub.note %}<strong class="pub__note">{{ pub.note }}</strong>{% endif %}</span>
+{%- endif %}
+{%- if pub.summary %}
+<br><span class="pub__summary">{{ pub.summary | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>
+{%- endif %}
+<span class="pub__links">
+{%- if pub.paperurl %} <a href="{% unless pub.paperurl contains '://' %}{{ base_path }}{% endunless %}{{ pub.paperurl }}">[paper]</a>{% endif %}
+{%- if pub.arxivurl %} <a href="{{ pub.arxivurl }}">[arXiv]</a>{% endif %}
+{%- if pub.doiurl %} <a href="{{ pub.doiurl }}">[DOI]</a>{% endif %}
+{%- if pub.codeurl %} <a href="{{ pub.codeurl }}">[code]</a>{% endif %}
+{%- if pub.slidesurl %} <a href="{% unless pub.slidesurl contains '://' %}{{ base_path }}{% endunless %}{{ pub.slidesurl }}">[slides]</a>{% endif %}
+{%- if pub.bibtexurl %} <a href="{% unless pub.bibtexurl contains '://' %}{{ base_path }}{% endunless %}{{ pub.bibtexurl }}">[bibtex]</a>{% endif %}
+{%- assign pub_body = pub.content | strip_html | strip -%}
+{%- if pub_body != "" %} <a href="{{ base_path }}{{ pub.url }}">[details]</a>{% endif -%}
+</span>
+</li>

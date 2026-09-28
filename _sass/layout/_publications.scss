@@ -30,6 +30,11 @@
     font-size: 0.9em;
   }
 
+  .pub__summary {
+    font-size: 0.85em;
+    color: var(--global-text-color-light);
+  }
+
   .pub__note {
     color: var(--global-link-color);
   }
