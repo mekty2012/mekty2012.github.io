@@ -1,0 +1,185 @@
+% Curriculum vitae of Taeyoung Kim.
+% Build (from this folder):  latexmk -pdf -outdir=build cv.tex
+% then copy build/cv.pdf to ../files/cv.pdf so the website links to the new version.
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,top=18mm,bottom=20mm,left=20mm,right=20mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{libertinus}
+\usepackage[scaled=0.95]{sourcesanspro}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+
+% ---------------------------------------------------------------- colours
+\definecolor{accent}{HTML}{1F3A5F}   % dark navy: headings, links
+\definecolor{muted}{HTML}{5F6B7A}    % grey: dates, secondary text
+
+\hypersetup{
+  colorlinks=true, urlcolor=accent, linkcolor=accent,
+  pdftitle={Taeyoung Kim - Curriculum Vitae}, pdfauthor={Taeyoung Kim},
+}
+
+% ---------------------------------------------------------------- layout
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.08}
+
+\titleformat{\section}
+  {\sffamily\bfseries\large\color{accent}\scshape}{}{0pt}{}
+  [{\color{accent!35}\titlerule[0.6pt]}]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\titleformat{\subsection}{\sffamily\bfseries\color{muted}}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{muted}Taeyoung Kim \textperiodcentered{} Curriculum Vitae}
+\fancyfoot[R]{\footnotesize\color{muted}Page \thepage{} of \pageref{LastPage}}
+
+% ---------------------------------------------------------------- macros
+\newcommand{\me}{\textbf{Taeyoung Kim}}
+\newcommand{\dates}[1]{{\small\color{muted}#1}}
+
+% \entry{what}{when}{where / details (may be empty)}
+% A long "what" wraps inside its own box instead of running into the date.
+\newlength{\datewidth}
+\newcommand{\entry}[3]{%
+  \settowidth{\datewidth}{\dates{#2}}%
+  \parbox[t]{\dimexpr\linewidth-\datewidth-1.5em\relax}{\raggedright\textbf{#1}\strut}%
+  \hfill\dates{#2}\par
+  \if\relax\detokenize{#3}\relax\else{#3}\par\fi
+  \vspace{5pt}}
+
+% Numbered publication lists: \begin{pubs} \pub{C2}{...} \end{pubs}
+\newenvironment{pubs}
+  {\begin{description}[leftmargin=2.6em,labelwidth=2.2em,labelsep=0.4em,
+                        itemsep=4pt,topsep=2pt,font=\normalfont\color{muted}]}
+  {\end{description}}
+\newcommand{\pub}[2]{\item[{[#1]}] #2}
+\newcommand{\plink}[2]{\href{#2}{\small[#1]}}
+
+\newlist{cvlist}{itemize}{1}
+\setlist[cvlist]{label={\color{muted}\textbullet}, leftmargin=1.2em, itemsep=1pt, topsep=1pt}
+
+\begin{document}
+
+% ================================================================ header
+{\sffamily\bfseries\fontsize{24}{28}\selectfont\color{accent} Taeyoung Kim}\par
+\vspace{3pt}
+{\large Ph.D. Candidate, School of Computing, KAIST}\par
+\vspace{6pt}
+{\small\color{muted}%
+  \mbox{\faEnvelope[regular]~\href{mailto:taeyoungkim21@kaist.ac.kr}{taeyoungkim21@kaist.ac.kr}}\quad
+  \mbox{\faGlobe~\href{https://mekty2012.github.io}{mekty2012.github.io}}\quad
+  \mbox{\faGraduationCap~\href{https://scholar.google.com/citations?user=p3B7VW4AAAAJ}{Google Scholar}}\quad
+  \mbox{\faGithub~\href{https://github.com/mekty2012}{mekty2012}}\quad
+  \mbox{\faMapMarker*~Daejeon, Korea}}\par
+
+% ================================================================ interests
+\section{Research Interests}
+Machine learning for mathematics, especially combinatorics: deep-learning frameworks for
+variational optimisation problems arising in extremal graph theory and in large deviations of
+random graphs, and more broadly for characterising extremisers of functional inequalities in
+harmonic analysis and PDEs. Earlier work on the theory of deep learning: infinite-width limits,
+in-context learning, and feature learning.
+
+% ================================================================ education
+\section{Education}
+\entry{Ph.D., School of Computing, KAIST}{Aug 2023 -- Feb 2027 (expected)}
+  {Advisor: Prof.\ Hongseok Yang}
+\entry{M.S., School of Computing, KAIST}{Sep 2021 -- Aug 2023}
+  {Advisor: Prof.\ Hongseok Yang}
+\entry{B.S., School of Computing and Department of Mathematical Sciences, KAIST}{}
+  {Double major in Computer Science and Mathematics}
+
+% ================================================================ publications
+\section{Publications}
+\subsection{Conference Papers}
+\begin{pubs}
+\pub{C2}{\me, Jineon Baek, Joonkyung Lee, Hongseok Yang.
+  \textbf{Implicit Neural Representations for Variational Problems on Graphons.}
+  \emph{Conference on Neural Information Processing Systems (NeurIPS)}, 2026. To appear.}
+\pub{C1}{\me, Hongseok Yang.
+  \textbf{An Infinite-Width Analysis on the Jacobian-Regularised Training of a Neural Network.}
+  \emph{International Conference on Machine Learning (ICML)}, PMLR 235:24584--24657, 2024.
+  \plink{PMLR}{https://proceedings.mlr.press/v235/kim24ah.html}
+  \plink{arXiv}{https://arxiv.org/abs/2312.03386}}
+\end{pubs}
+
+\subsection{Workshop Papers}
+\begin{pubs}
+\pub{W2}{\me, Hongseok Yang.
+  \textbf{Transformers Can Perform Distributionally-robust Optimisation through In-context Learning.}
+  \emph{ICML 2024 Workshop on In-Context Learning}, 2024.
+  \plink{OpenReview}{https://openreview.net/forum?id=MOgg2cEms5}}
+\pub{W1}{Jaehui Hwang, \me, Hongseok Yang.
+  \textbf{Analysing Feature Learning of Gradient Descent Using Periodic Functions.}
+  \emph{ICML 2024 Workshop on High-dimensional Learning Dynamics (HiLD)}, 2024.
+  \plink{OpenReview}{https://openreview.net/forum?id=QbnLTo2833}}
+\end{pubs}
+
+\subsection{Preprints}
+\begin{pubs}
+\pub{P1}{Sangho Lim, Seonghyuk Im, \me, Kyeongsik Nam, Hongseok Yang.
+  \textbf{Bipodal Optimizers in the Upper-Tail Variational Problem for Regular Subgraph Densities.}
+  arXiv:2609.15222, 2026. Submitted to \emph{Random Structures \& Algorithms}.
+  \plink{arXiv}{https://arxiv.org/abs/2609.15222}}
+\end{pubs}
+
+\subsection{In Preparation}
+\begin{pubs}
+\pub{M4}{\me, Jineon Baek, Seonghyuk Im, Joonkyung Lee, Hongseok Yang.
+  \textbf{Goodman-type Lower Bounds for Odd Cycles I: The Dense Regime.}}
+\pub{M3}{\me, Jineon Baek, Seonghyuk Im, Joonkyung Lee, Hongseok Yang.
+  \textbf{Goodman-type Lower Bounds for Odd Cycles II: The Intermediate Regime.}}
+\pub{M2}{\me, Jineon Baek, Seonghyuk Im, Joonkyung Lee, Hongseok Yang.
+  \textbf{Goodman-type Lower Bounds for Odd Cycles III: Quantitative Stability.}}
+\pub{M1}{\me, Péter Csikvári, Daniel Kráľ, Joanna Jasinska.
+  \textbf{Note on Common Pairs of Graphs.}}
+\end{pubs}
+
+% ================================================================ talks
+\section{Talks}
+\entry{Implicit Neural Representation of Graphons for Extremal Graph Theory}{Jul 2026}
+  {Tutorial, \emph{PACOH Workshop: Artificial Intelligence for Combinatorics}, Jeju, Korea}
+\entry{Transformers Can Perform Distributionally-robust Optimisation through In-context Learning}{Aug 2024}
+  {Seminar, \emph{Computational Statistics and Machine Learning Group}, Department of Statistics,
+   University of Oxford, UK}
+
+% ================================================================ awards
+\section{Honors and Awards}
+\entry{Gold Reviewer (top 25\% of reviewers), ICML 2026}{2026}{}
+\entry{Outstanding TA Award, KAIST}{Spring 2022}
+  {For \emph{Introduction to Algorithms}}
+
+% ================================================================ teaching
+\section{Teaching}
+\subsection{Teaching Assistant, KAIST}
+\entry{Introduction to Logic for Computer Science}{Spring 2023, Spring 2024, Spring 2025}{}
+\entry{Operating Systems and Lab}{Fall 2024}{}
+\entry{Special Topics in Computer Science: Computational Learning Theory}{Fall 2023}{}
+\entry{Introduction to Algorithms}{Fall 2021, Spring 2022}{}
+
+% ================================================================ service
+\section{Professional Service}
+\subsection{Reviewer}
+\begin{cvlist}
+  \item International Conference on Machine Learning (ICML), 2026
+  \item Conference on Neural Information Processing Systems (NeurIPS), 2026
+  \item Transactions on Machine Learning Research (TMLR), 2026--present
+\end{cvlist}
+
+\vfill
+{\footnotesize\color{muted}Last updated: \today}
+
+\end{document}

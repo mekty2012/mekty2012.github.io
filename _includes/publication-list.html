@@ -1,6 +1,6 @@
 {% comment %}
-  Compact list of everything in _publications/: papers marked `wip: true` first under
-  "In preparation", then the rest newest first, grouped by year.
+  Compact list of everything in _publications/: papers newest first, grouped by year,
+  then papers marked `wip: true` at the bottom under "In preparation".
   Used on the front page (_pages/about.md) and on /publications/.
   The output is wrapped in one unindented <div> so it is safe to include from Markdown.
 {% endcomment %}
@@ -12,14 +12,6 @@
 {%- if site.publications.size == 0 %}
 <p>Coming soon.</p>
 {%- endif %}
-{%- if wip_pubs.size > 0 %}
-<h3 class="pub-list__year">In preparation</h3>
-<ul>
-{%- for pub in wip_pubs %}
-{% include publication-item.html %}
-{%- endfor %}
-</ul>
-{%- endif %}
 {%- for year in pubs_by_year %}
 <h3 class="pub-list__year">{{ year.name }}</h3>
 <ul>
@@ -29,4 +21,12 @@
 {%- endfor %}
 </ul>
 {%- endfor %}
+{%- if wip_pubs.size > 0 %}
+<h3 class="pub-list__year">In preparation</h3>
+<ul>
+{%- for pub in wip_pubs %}
+{% include publication-item.html %}
+{%- endfor %}
+</ul>
+{%- endif %}
 </div>

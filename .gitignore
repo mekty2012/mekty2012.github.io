@@ -21,3 +21,6 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# LaTeX build output of the CV (the published PDF is files/cv.pdf)
+cv/build/

@@ -11,6 +11,6 @@ main:
   - title: "Talks"
     url: /talks/
 
-  # Put your CV at files/cv.pdf, then uncomment:
-  # - title: "CV"
-  #   url: /files/cv.pdf
+  # Built from cv/cv.tex (see README)
+  - title: "CV"
+    url: /files/cv.pdf
