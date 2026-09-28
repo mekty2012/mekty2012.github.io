@@ -1,0 +1,5 @@
+% Application version of the CV: identical to cv.tex plus a References section read from
+% referees.tex (git-ignored). Build: latexmk -pdf -outdir=build cv-application.tex
+% The output build/cv-application.pdf is for sending to committees only; never copy it to ../files/.
+\def\withreferees{}
+\input{cv}

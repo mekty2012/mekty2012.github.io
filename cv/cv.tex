@@ -1,6 +1,10 @@
 % Curriculum vitae of Taeyoung Kim.
 % Build (from this folder):  latexmk -pdf -outdir=build cv.tex
 % then copy build/cv.pdf to ../files/cv.pdf so the website links to the new version.
+%
+% The public CV has no references. For applications, build cv-application.tex instead:
+% it sets \withreferees and pulls the referees from referees.tex, which is git-ignored
+% so their contact details never reach the (public) repository.
 
 \documentclass[11pt,a4paper]{article}
 
@@ -16,6 +20,7 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{fontawesome5}
+\usepackage{multicol}
 \usepackage[hidelinks]{hyperref}
 
 % ---------------------------------------------------------------- colours
@@ -70,6 +75,12 @@
 
 \newlist{cvlist}{itemize}{1}
 \setlist[cvlist]{label={\color{muted}\textbullet}, leftmargin=1.2em, itemsep=1pt, topsep=1pt}
+
+% Referees (application version only, see referees.tex):
+% \referee{name}{position}{institution}{email}
+\newcommand{\referee}[4]{%
+  \parbox[t]{\linewidth}{\textbf{#1}\\ #2\\ #3\\
+    {\small\href{mailto:#4}{#4}}}\par\vspace{8pt}}
 
 \begin{document}
 
@@ -180,6 +191,17 @@ in-context learning, and feature learning.
   \item Conference on Neural Information Processing Systems (NeurIPS), 2026
   \item Transactions on Machine Learning Research (TMLR), 2026--present
 \end{cvlist}
+
+% ================================================================ references (applications only)
+\ifdefined\withreferees
+  \IfFileExists{referees.tex}
+    {\section{References}
+     \setlength{\multicolsep}{2pt}
+     \begin{multicols}{2}\raggedcolumns
+     \input{referees}
+     \end{multicols}}
+    {\PackageError{cv}{referees.tex not found}{Copy referees.example.tex to referees.tex and fill it in.}}
+\fi
 
 \vfill
 {\footnotesize\color{muted}Last updated: \today}

@@ -24,7 +24,7 @@ author:
   # Biographic information
   avatar           : # e.g. "profile.png" in images/; leave empty for no photo
   name             : "Tae Young Kim"
-  pronouns         : He/His # example: "she/her"  
+  pronouns         : He/Him # example: "she/her"  
   bio              : Ph.D. Candidate in School of Computing # e.g. "Ph.D. student in Computer Science"
   location         : Daejeon, Korea # e.g. "Daejeon, Korea"
   employer         : KAIST # e.g. "KAIST"
@@ -52,7 +52,7 @@ author:
   dribbble         : # Username
   github           : "mekty2012"
   chesscom         : "taeyoung-kim"
-  chesscom_label   : "Chess.com (puzzle peak 2086)"
+  chesscom_label   : "Chess.com"
   kaggle           : # Username
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 

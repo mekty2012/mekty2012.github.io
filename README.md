@@ -29,6 +29,19 @@ cp build/cv.pdf ../files/cv.pdf
 
 The site's "CV" menu item links to `files/cv.pdf`.
 
+### Application version (with references)
+
+The public CV has no references. For applications:
+
+1. Copy `cv/referees.example.tex` to `cv/referees.tex` and fill it in. This file is git-ignored,
+   so the referees' contact details stay on your computer and never reach this public repository.
+2. Build it:
+   ```sh
+   cd cv
+   latexmk -pdf -outdir=build cv-application.tex
+   ```
+3. Send `cv/build/cv-application.pdf`. Never copy it into `files/`, which is public.
+
 ## Local preview (optional)
 
 Requires Ruby + Bundler:

@@ -24,3 +24,5 @@ package-lock.json
 
 # LaTeX build output of the CV (the published PDF is files/cv.pdf)
 cv/build/
+# Referees for the application CV: private, never commit
+cv/referees.tex
