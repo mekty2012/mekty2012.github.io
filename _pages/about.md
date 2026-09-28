@@ -13,3 +13,7 @@ Introduction coming soon.
 Publications
 ======
 {% include publication-list.html %}
+
+Talks
+======
+{% include talk-list.html %}

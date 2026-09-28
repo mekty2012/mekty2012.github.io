@@ -1,0 +1,24 @@
+{% comment %}
+  Compact list of everything in _talks/, newest first.
+  Used on the front page (_pages/about.md) and on /talks/.
+  The output is wrapped in one unindented <div> so it is safe to include from Markdown.
+{% endcomment %}
+{%- include base_path -%}
+{%- assign talks = site.talks | sort: "date" | reverse -%}
+<div class="pub-list">
+{%- if talks.size == 0 %}
+<p>Coming soon.</p>
+{%- endif %}
+<ul>
+{%- for talk in talks %}
+<li class="pub">
+<span class="pub__title">{{ talk.title | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>
+<br><span class="pub__venue">{% if talk.type %}{{ talk.type }}, {% endif %}{% if talk.venueurl %}<a href="{{ talk.venueurl }}"><em>{{ talk.venue }}</em></a>{% else %}<em>{{ talk.venue }}</em>{% endif %}{% if talk.location %}, {{ talk.location }}{% endif %} &middot; {{ talk.date | date: "%b %-d, %Y" }}</span>
+<span class="pub__links">
+{%- if talk.slidesurl %} <a href="{% unless talk.slidesurl contains '://' %}{{ base_path }}{% endunless %}{{ talk.slidesurl }}">[slides]</a>{% endif %}
+{%- if talk.videourl %} <a href="{{ talk.videourl }}">[video]</a>{% endif -%}
+</span>
+</li>
+{%- endfor %}
+</ul>
+</div>

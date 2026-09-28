@@ -218,6 +218,8 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  talks:
+    output: false   # talks are only listed, they have no pages of their own
 
 
 # These settings control how pages and collections are included in the site
