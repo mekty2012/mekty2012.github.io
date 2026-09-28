@@ -15,8 +15,10 @@ I'm also interested in the application of ML/DL in other areas of mathematics, h
 
 Education
 ======
-- **Ph.D.**, School of Computing, KAIST --- Aug 2023 -- Feb 2027 (expected, Advisor: Hongseok Yang)
-- **M.S.**, School of Computing, KAIST --- Sep 2021 -- Aug 2023 (Advisor: Hongseok Yang)
+- **Ph.D.**, School of Computing, KAIST --- Aug 2023 -- Feb 2027 (expected, Advisor: Hongseok Yang)  
+  Dissertation (tentative): *Implicit Neural Representations for Variational Problems on Graphons*
+- **M.S.**, School of Computing, KAIST --- Sep 2021 -- Aug 2023 (Advisor: Hongseok Yang)  
+  Thesis: *An Infinite-Width Analysis on the Jacobian-Regularised Training of a Neural Network*
 - **B.S.**, School of Computing and Department of Mathematical Sciences (double major), KAIST
 
 Publications
