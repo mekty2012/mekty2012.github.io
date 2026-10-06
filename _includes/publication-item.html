@@ -3,7 +3,7 @@
 <span class="pub__title">{{ pub.title | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>
 {%- if pub.authors %}<br><span class="pub__authors">{{ pub.authors | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>{% endif %}
 {%- if pub.venue or pub.note %}
-<br><span class="pub__venue">{% if pub.venue %}<em>{{ pub.venue }}</em>{% endif %}{% if pub.venue and pub.note %} &middot; {% endif %}{% if pub.note %}<strong class="pub__note">{{ pub.note }}</strong>{% endif %}</span>
+<br><span class="pub__venue">{% if pub.venue %}<em>{{ pub.venue }}</em>{% endif %}{% if pub.acceptance %} (acceptance rate {{ pub.acceptance }}){% endif %}{% if pub.venue and pub.note %} &middot; {% endif %}{% if pub.note %}<strong class="pub__note">{{ pub.note }}</strong>{% endif %}</span>
 {%- endif %}
 {%- if pub.summary %}
 <br><span class="pub__summary">{{ pub.summary | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>

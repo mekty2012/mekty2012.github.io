@@ -6,7 +6,9 @@
 title: "Paper Title"
 authors: "Coauthor One, **Tae Young Kim**, Coauthor Two"   # Markdown; bold your own name
 venue: "Conference or Journal Name (ABBR 2026)"
+acceptance: "25.0%, 1234/4936"                            # shown after the venue as "(acceptance rate ...)"
 date: 2026-01-15                                          # used for sorting and the year heading
+# kind: note                                              # list under "Notes" (unrefereed write-ups) instead of by year
 note: "Distinguished Paper"                              # award, "to appear", "under review", ...
 paperurl: "/files/paper-short-name.pdf"                 # a file in files/, or a full URL
 arxivurl: "https://arxiv.org/abs/xxxx.xxxxx"
