@@ -40,6 +40,7 @@ Teaching
 Service
 ======
 **Reviewer**
+- International Conference on Learning Representations (ICLR 2026, 2027)
 - International Conference on Machine Learning (ICML 2026) --- **Gold Reviewer** (top 25%)
 - Conference on Neural Information Processing Systems (NeurIPS 2026)
 - Transactions on Machine Learning Research (TMLR), 2026--present
