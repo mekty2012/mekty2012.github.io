@@ -35,6 +35,42 @@
     color: var(--global-text-color-light);
   }
 
+  /* Venue + links + arrow line; only the links and the arrow react to clicks,
+     and clicking the arrow shows or hides the summary. */
+  .pub__more {
+    margin: 0;
+
+    > summary {
+      display: block;
+      list-style: none;
+      cursor: default;
+      pointer-events: none;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      a,
+      .pub__toggle {
+        pointer-events: auto;
+      }
+    }
+
+    &[open] .pub__toggle {
+      transform: rotate(90deg);
+    }
+  }
+
+  .pub__toggle {
+    display: inline-block;
+    padding: 0 0.3em;
+    font-size: 0.85em;
+    color: var(--global-link-color);
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    user-select: none;
+  }
+
   .pub__note {
     color: var(--global-link-color);
   }

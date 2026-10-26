@@ -1,18 +1,17 @@
 {% comment %}
   Compact list of everything in _publications/: papers newest first, grouped by year,
-  then papers marked `wip: true` under "In preparation",
-  then notes marked `kind: note` (unrefereed write-ups) under "Notes".
+  then papers marked `wip: true` under "In preparation".
+  Notes (`kind: note`) are left out; they have their own list in note-list.html.
   Used on the front page (_pages/about.md) and on /publications/.
   The output is wrapped in one unindented <div> so it is safe to include from Markdown.
 {% endcomment %}
 {%- include base_path -%}
-{%- assign note_pubs = site.publications | where_exp: "pub", "pub.kind == 'note'" | sort: "date" | reverse -%}
 {%- assign paper_pubs = site.publications | where_exp: "pub", "pub.kind != 'note'" -%}
 {%- assign wip_pubs = paper_pubs | where_exp: "pub", "pub.wip == true" | sort: "date" | reverse -%}
 {%- assign done_pubs = paper_pubs | where_exp: "pub", "pub.wip != true" -%}
 {%- assign pubs_by_year = done_pubs | group_by_exp: "pub", "pub.date | date: '%Y'" | sort: "name" | reverse -%}
 <div class="pub-list">
-{%- if site.publications.size == 0 %}
+{%- if paper_pubs.size == 0 %}
 <p>Coming soon.</p>
 {%- endif %}
 {%- for year in pubs_by_year %}
@@ -28,14 +27,6 @@
 <h3 class="pub-list__year">In preparation</h3>
 <ul>
 {%- for pub in wip_pubs %}
-{% include publication-item.html %}
-{%- endfor %}
-</ul>
-{%- endif %}
-{%- if note_pubs.size > 0 %}
-<h3 class="pub-list__year">Notes</h3>
-<ul>
-{%- for pub in note_pubs %}
 {% include publication-item.html %}
 {%- endfor %}
 </ul>

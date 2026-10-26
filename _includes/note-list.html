@@ -1,0 +1,14 @@
+{% comment %}
+  Compact list of the notes in _publications/ (marked `kind: note`; unrefereed write-ups), newest first.
+  Shown in its own "Notes" section on the front page (_pages/about.md), separate from publication-list.html.
+  The output is wrapped in one unindented <div> so it is safe to include from Markdown.
+{% endcomment %}
+{%- include base_path -%}
+{%- assign note_pubs = site.publications | where_exp: "pub", "pub.kind == 'note'" | sort: "date" | reverse -%}
+<div class="pub-list">
+<ul>
+{%- for pub in note_pubs %}
+{% include publication-item.html %}
+{%- endfor %}
+</ul>
+</div>

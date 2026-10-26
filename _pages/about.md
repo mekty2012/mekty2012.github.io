@@ -29,6 +29,10 @@ Talks
 ======
 {% include talk-list.html %}
 
+Notes
+======
+{% include note-list.html %}
+
 Teaching
 ======
 **Teaching Assistant**, KAIST
