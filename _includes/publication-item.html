@@ -10,6 +10,7 @@
 <span class="pub__links">
 {%- if pub.paperurl %} <a href="{% unless pub.paperurl contains '://' %}{{ base_path }}{% endunless %}{{ pub.paperurl }}">[paper]</a>{% endif %}
 {%- if pub.arxivurl %} <a href="{{ pub.arxivurl }}">[arXiv]</a>{% endif %}
+{%- if pub.hexagonurl %} <a href="{{ pub.hexagonurl }}">[Hexagon]</a>{% endif %}
 {%- if pub.doiurl %} <a href="{{ pub.doiurl }}">[DOI]</a>{% endif %}
 {%- if pub.codeurl %} <a href="{{ pub.codeurl }}">[code]</a>{% endif %}
 {%- if pub.slidesurl %} <a href="{% unless pub.slidesurl contains '://' %}{{ base_path }}{% endunless %}{{ pub.slidesurl }}">[slides]</a>{% endif %}

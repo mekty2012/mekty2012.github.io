@@ -5,6 +5,7 @@ kind: note
 venue: "Note with a Lean 4 formalisation"
 date: 2026-08-22   # sort key within "Notes" only (newest first); not shown
 paperurl: "https://github.com/mekty2012/Off-diagonal-Commonality-of-Even-and-Odd-Cycles/blob/main/even_odd_cycle_commonality.pdf"
+hexagonurl: "https://hexagonmath.org/2611.00066v1"
 codeurl: "https://github.com/mekty2012/Off-diagonal-Commonality-of-Even-and-Odd-Cycles"
 summary: >-
   Determines the off-diagonal commonality region, in the sense of
