@@ -30,7 +30,7 @@ Specialty coffee is one of my hobbies. I brew by hand both at home and in the la
 - **Center Coffee** (Seoul) \[[Samseong](https://www.google.com/maps/search/?api=1&query=센터커피+삼성점+서울+강남구+영동대로96길+26)\] \[[Lotte Myeongdong](https://www.google.com/maps/search/?api=1&query=센터커피+롯데명동+서울+중구+남대문로+81)\] \[[Seoul Station](https://www.google.com/maps/search/?api=1&query=센터커피+서울역점+서울+용산구+한강대로+405)\] \[[Guui Eastpole](https://www.google.com/maps/search/?api=1&query=센터커피+구의이스트폴점+서울+광진구+아차산로+402)\] \[[Gwanghwamun](https://www.google.com/maps/search/?api=1&query=센터커피+광화문점+서울+중구+세종대로+136)\] --- Mostly modern spaces with excellent brewed coffee, and the ice cream is also worth trying. It is led by Sang Ho Park, who placed 4th at the 2013 World Brewers Cup and 6th at the 2015 World Coffee in Good Spirits Championship.
 - **[Cafe BonDn](https://www.google.com/maps/search/?api=1&query=비온디앤+서울+중구+세종대로18길+28)** (near Seoul City Hall) --- Small and warm, with superb Geisha espresso and lattes. You can listen to vinyl records here, and the very welcoming owner likes to take pictures of guests.
 
-## Best coffees so far
+## Coffee Beans I prefer
 
 ### Ethiopia Heirloom Washed
 
