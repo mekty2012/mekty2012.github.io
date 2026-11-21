@@ -6,15 +6,43 @@ author_profile: true
 
 Coffee
 ======
-Coffee is one of my hobbies. At home I mostly brew by hand, and I don't own any espresso equipment.
+Specialty coffee is one of my hobbies. I brew by hand both at home and in the lab. When I visit other places, I often make cold brew with specialty beans, which has earned reactions like "we can't taste this anywhere else." Lately, I have also been experimenting with cold brew made with spirits such as vodka and bourbon.
+
+## Cafes I recommend
+
+### Daejeon
+
+- **[Little Town Coffee Stand](https://www.google.com/maps/search/?api=1&query=리틀타운커피스탠드+대전+유성구+어은로42번길+25)** (near KAIST) --- A warm, inviting place with lovely hand drip and americano. It is often full, but the bar seats are just as good, thanks to the welcoming baristas. Its first store is Midtown Coffee Stand.
+- **[Contra Coffee](https://www.google.com/maps/search/?api=1&query=콘트라커피+대전+유성구+어은로52번길+1)** (near KAIST) --- Clean and modern, with good espresso.
+- **[Gabae Roasters](https://www.google.com/maps/search/?api=1&query=가배로스터스+대전+유성구+어은로42번길+21-10)** (near KAIST) --- Warm and woody. It doesn't specialise in hand drip, but its hand drip is still solid. The salty drinks are also worth trying.
+- **[CHILLIF Espresso Bar](https://www.google.com/maps/search/?api=1&query=칠리프+대전+유성구+어은로57번길+35)** (near KAIST) --- Small, woody, and charming, with lovely espresso and espresso-based drinks.
+- **[Champspace Coffee Roasters](https://www.google.com/maps/search/?api=1&query=챔프스페이스+커피로스터스+대전+동구+수향길+97)** (near Daejeon Station) --- Fairly large and beautifully designed, with lovely hand drip, great espresso-based drinks, and coffee cocktails. The owner, Min-Seo Kang, placed 5th at the 2018 World Coffee in Good Spirits Championship, a coffee cocktail competition. On a hot summer day, try the shakerato.
+- **[Black Desk](https://www.google.com/maps/search/?api=1&query=블랙데스크+대전+중구+선화동+374-5)** (near Jung-gu Office Station) --- Spacious and modern, serving several funky coffees.
+
+### Near KIAS (Seoul)
+
+- **[Yeoksi Coffee](https://www.google.com/maps/search/?api=1&query=역시커피+서울+동대문구+회기로+28)** --- Small and clean, with lovely espresso-style coffee brewed in a moka pot.
+- **[Cafe Vivant](https://www.google.com/maps/search/?api=1&query=카페+비반트+서울+동대문구+회기로21길+33)** --- Classic and elegant, with a fine selection of hand drip coffees.
+
+### Elsewhere
+
+- **Momos Coffee** (Busan) \[[Oncheonjang](https://www.google.com/maps/search/?api=1&query=모모스커피+온천장+본점+부산+금정구+오시게로+20)\] \[[Yeongdo](https://www.google.com/maps/search/?api=1&query=모모스커피+영도+로스터리+부산+영도구+봉래나루로+160)\] --- One of the best cafes in South Korea, and well worth a visit if you are in Busan. Each branch has its own atmosphere. It is home to Jooyeon Jeon, the 2019 World Barista Champion, and Charlie (Kyoungha) Chu, the 2021 World Cup Tasters Champion.
+- **Center Coffee** (Seoul) \[[Gwanghwamun](https://www.google.com/maps/search/?api=1&query=센터커피+광화문점)\] \[[Seoul Station](https://www.google.com/maps/search/?api=1&query=센터커피+서울역점+서울+용산구+한강대로+405)\] \[[Samseong](https://www.google.com/maps/search/?api=1&query=센터커피+삼성점)\] \[[Guui East Pole](https://www.google.com/maps/search/?api=1&query=센터커피+구의이스트폴점)\] --- Mostly modern spaces with excellent brewed coffee, and the ice cream is also worth trying. It is led by Sang Ho Park, who placed 4th at the 2013 World Brewers Cup and 6th at the 2015 World Coffee in Good Spirits Championship.
+- **[Cafe BonDn](https://www.google.com/maps/search/?api=1&query=비온디앤+서울+중구+세종대로18길+28)** (near Seoul City Hall) --- Small and warm, with superb Geisha espresso and lattes. You can listen to vinyl records here, and the very welcoming owner likes to take pictures of guests.
 
 ## Best coffees so far
 
-| Coffee | Variety | Process |
-| --- | --- | --- |
-| Ethiopia | Heirloom | Washed |
-| Costa Rica | Typica | Honey |
-| Peru | Geisha | Washed |
+### Ethiopia Heirloom Washed
+
+A beautifully floral cup with mild acidity and a clean finish, and excellent value for its quality. Ethiopia's high altitude is usually what makes this profile possible.
+
+### Costa Rica Typica Honey
+
+Rich sweetness and fruity flavours in a clean cup, though it is usually a little expensive. My favourite is San Isidro Labrador Typica Honey.
+
+### Peru Geisha
+
+A tea-like, floral cup with mild acidity, and quite affordable compared to other Geisha coffees.
 
 ## Gear
 
@@ -42,25 +70,3 @@ Coffee is one of my hobbies. At home I mostly brew by hand, and I don't own any 
 - **Scale:** Acuba Glowgram
 - **Kettle:** Fellow Stagg EKG Pro (600 mL)
 - **Cups:** Refined 2-WayCup (130 mL and 330 mL)
-
-## Cafes I recommend
-
-### Daejeon
-
-- **Little Town Coffee Stand** (near KAIST) --- A nice, warm place with good hand drip and americano. It is often full, but the bar seats are good too because the baristas are welcoming. Midtown Coffee Stand is its first store.
-- **Contra Coffee** (near KAIST) --- A clean, modern place with good espresso.
-- **Gabae Roasters** (near KAIST) --- A warm, woody place. It doesn't specialize in hand drip, but the hand drip is still fine. I also recommend the salty beverages.
-- **CHILLIF Espresso Bar** (near KAIST) --- A small, woody, and nice place with good espresso and espresso variations.
-- **Champspace Coffee Roasters** (near Daejeon Station) --- A fairly large and aesthetic place with nice hand drip, great variations, and coffee cocktails. The owner, Min-Seo Kang, placed 5th at the 2018 World Coffee in Good Spirits Championship. I recommend the shakerato in hot summer.
-- **Black Desk** (near Jung-gu Office Station) --- A wide, modern space serving several funky coffees.
-
-### Near KIAS (Seoul)
-
-- **Yeoksi Coffee** --- A small, clean place with nice espresso-style coffee made in a moka pot.
-- **Cafe Vivant** --- A classic, aesthetic place with fine hand drip menus.
-
-### Elsewhere
-
-- **Momos Coffee** (Busan) --- One of the best cafes in South Korea, and worth a visit if you are around Busan. The atmosphere differs by branch. It is home to Jooyeon Jeon, the 2019 World Barista Champion, and Charlie (Kyoungha) Chu, the 2021 World Cup Tasters Champion.
-- **Center Coffee** (Seoul) --- Mostly modern spaces with great brewed coffee, and I also recommend the ice cream. It is led by Sang Ho Park, who placed 4th at the 2013 World Brewers Cup and 6th at the 2015 World Coffee in Good Spirits Championship.
-- **Cafe BonDn** (near Seoul City Hall) --- A small, warm place with great Geisha espresso and lattes. You can listen to vinyl records, and the owner is very welcoming and likes to take pictures of guests.
