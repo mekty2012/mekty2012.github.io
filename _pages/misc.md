@@ -6,7 +6,9 @@ author_profile: true
 
 Coffee
 ======
-Specialty coffee is one of my hobbies. I brew by hand both at home and in the lab. When I visit other places, I often make cold brew with specialty beans, which has earned reactions like "we can't taste this anywhere else." Lately, I have also been experimenting with cold brew made with spirits such as vodka and bourbon.
+Specialty coffee is one of my hobbies. I brew by hand both at home and in the lab. When I visit other places, I often make cold brew with specialty beans, which has earned reactions like "we can't taste this anywhere else." 
+If you are planning to meet me, I can prepare this for you, but please let me know in advance.
+Lately, I have also been experimenting with cold brew made with spirits such as vodka and whiskey.
 
 ## Cafes I recommend
 
@@ -74,3 +76,4 @@ I don't usually prefer highly fermented coffees like this one, but Sudan Rume ex
 - **Scale:** Acuba Glowgram --- Highly recommended. It shows the flow rate per second, which revealed how irregular my pouring was and makes it a great tool for practising a smooth pour.
 - **Kettle:** Fellow Stagg EKG Pro (600 mL)
 - **Cups:** Refined 2-WayCup (130 mL and 330 mL)
+- **Tumbler:** Fellow Carter Carry Tumbler --- Highly recommended. Unlike most tumblers, it has a ceramic-coated interior that keeps metallic flavours out of the coffee.
