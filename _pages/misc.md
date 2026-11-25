@@ -77,3 +77,4 @@ I don't usually prefer highly fermented coffees like this one, but Sudan Rume ex
 - **Kettle:** Fellow Stagg EKG Pro (600 mL)
 - **Cups:** Refined 2-WayCup (130 mL and 330 mL)
 - **Tumbler:** Fellow Carter Carry Tumbler --- Highly recommended. Unlike most tumblers, it has a ceramic-coated interior that keeps metallic flavours out of the coffee.
+- **TDS meter** Atago PAL-Coffee (BX/TDS)
